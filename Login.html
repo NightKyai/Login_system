@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: gray;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+      margin-top: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    .register-btn {
+      background-color: #fb0075;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-btn:hover {
+      background-color: #c3005c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/practice/Login.png" alt="Logo" width="90px" />
+    <h1>Login</h1>
+    <form action="Login.html" method="get">
+      <label for="username">Username</label><br />
+      <input type="text" name="username" id="username" value="Thanakrit" /><br />
+
+      <label for="password">Password</label><br />
+      <input type="password" name="pwd" id="pwd" /><br />
+
+      <input type="submit" value="Submit" /><br />
+    </form>
+
+    <!-- ปุ่ม Register ที่ลิงก์ไปหน้า Login.html (หรือเปลี่ยน URL ตามต้องการ) -->
+    <a href="http://10.17.5.39/ddkasp39/Test_login/Login.html">
+      <button class="register-btn">Register</button>
+    </a>
+  </div>
+</body>
+</html>
